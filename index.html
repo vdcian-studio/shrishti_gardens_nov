@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shrishti Gardens — A Private Nature Retreat in Kodaikanal</title>
+<meta name="description" content="Shrishti Gardens is a boutique nature retreat 2,133 metres above sea level in Kodaikanal, Tamil Nadu. Thoughtful comfort, quiet luxury and mountain air.">
+<meta property="og:title" content="Shrishti Gardens — Find your place in the quiet">
+<meta property="og:description" content="A private nature retreat in Kodaikanal, Tamil Nadu, India.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-entrance.jpg">
+<meta name="theme-color" content="#0D1510">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-entrance.jpg" imagesrcset="assets/hero-entrance-960.jpg 960w, assets/hero-entrance.jpg 1456w" imagesizes="100vw">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a href="#home" class="brand" aria-label="Shrishti Gardens — back to top">
+    <img src="assets/logo-light.png" alt="Shrishti Gardens — your green escape" width="720" height="347">
+  </a>
+  <nav class="main-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#rooms">Suites</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta" data-open-enquiry>Enquire</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <ul>
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#rooms">Suites</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#booking" data-open-enquiry>Enquire</a></li>
+  </ul>
+  <p class="mobile-menu__foot">Kodaikanal · Tamil Nadu · India</p>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="hero__bg">
+    <img src="assets/hero-entrance.jpg" srcset="assets/hero-entrance-960.jpg 960w, assets/hero-entrance.jpg 1456w" sizes="100vw"
+         alt="The Shrishti Gardens entrance at dusk, with lit planters and terraced gardens beneath misty Kodaikanal hills" width="1456" height="820" fetchpriority="high">
+  </div>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <p class="hero__eyebrow">A private nature retreat · 2,133 metres above the sea level</p>
+      <h1 class="hero__title" id="heroTitle">
+        <span class="line"><span>FIND YOUR</span></span>
+        <span class="line"><span>PLACE IN</span></span>
+        <span class="line"><span>THE QUIET.</span></span>
+      </h1>
+      <div class="hero__support">
+        <svg class="starburst" viewBox="0 0 32 32" aria-hidden="true"><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M16 3v26"/><path d="M3 16h26"/><path d="M6.8 6.8l18.4 18.4"/><path d="M25.2 6.8L6.8 25.2"/></g></svg>
+        <p>A world of thoughtful comfort,<br>quiet luxury and mountain air.</p>
+      </div>
+
+      <form class="hero-form" id="heroForm" novalidate aria-describedby="heroFormNote">
+        <div class="hf-field sg-trigger">
+          <span class="hf-label" id="hfInLbl">Check in</span>
+          <button type="button" class="sg-field-btn" id="hfInBtn" aria-labelledby="hfInLbl hfInBtn" aria-haspopup="dialog" aria-expanded="false"><span class="sg-val">Add date</span><svg class="sg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></button>
+          <input type="hidden" id="hfIn" name="checkIn">
+        </div>
+        <div class="hf-field sg-trigger">
+          <span class="hf-label" id="hfOutLbl">Check out</span>
+          <button type="button" class="sg-field-btn" id="hfOutBtn" aria-labelledby="hfOutLbl hfOutBtn" aria-haspopup="dialog" aria-expanded="false"><span class="sg-val">Add date</span><svg class="sg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></button>
+          <input type="hidden" id="hfOut" name="checkOut">
+        </div>
+        <div class="hf-field sg-trigger">
+          <span class="hf-label" id="hfGuestsLbl">Guests</span>
+          <button type="button" class="sg-field-btn" id="hfGuestsBtn" aria-labelledby="hfGuestsLbl hfGuestsBtn" aria-haspopup="dialog" aria-expanded="false"><span class="sg-val">2 Guests</span><svg class="sg-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <input type="hidden" id="hfAdults" name="adults" value="2">
+          <input type="hidden" id="hfKids" name="children" value="0">
+        </div>
+        <button type="submit" class="hf-btn">Enquire
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <div class="hero-form__meta">
+        <p class="hero-form__note" id="heroFormNote" aria-live="polite">Booking enquiry only — your stay is confirmed by our team.</p>
+        <button type="button" class="status-link" data-open-status>Check status <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+  </div>
+  <div class="hero__bar">
+    <p class="hero__weather" id="heroWeather" aria-live="polite" hidden>
+      <span class="hero__wicon" id="heroWIcon" aria-hidden="true"></span>
+      <span>Weather in Kodaikanal: <span id="heroWText"></span></span>
+    </p>
+    <a href="#about" class="scroll-cue">Scroll to explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    <p class="hero__stat"><span class="hero__dot" aria-hidden="true"></span>13 curated rooms · 4 suite styles</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about" aria-labelledby="aboutTitle">
+  <div class="container about__grid">
+    <div class="about__text reveal">
+      <p class="kicker">Our Story</p>
+      <h2 class="display" id="aboutTitle">Rooted in nature.<br><em>Designed for stillness.</em></h2>
+      <p>High in the Palani Hills, Shrishti Gardens is a boutique nature retreat in Kodaikanal — a small collection of thirteen rooms set apart from the everyday, where cool mountain air and green surroundings set the pace of the day.</p>
+      <p>We keep things intimate and unhurried. Thoughtful hospitality, comfortable suites and a sense of privacy let you slow down, rest well and enjoy the quieter side of the hill station.</p>
+      <dl class="facts">
+        <div><dt>13</dt><dd>Rooms</dd></div>
+        <div><dt>4</dt><dd>Suite categories</dd></div>
+        <div><dt>2,133 m</dt><dd>Above sea level</dd></div>
+      </dl>
+    </div>
+    <div class="about__media reveal reveal--img">
+      <figure class="about__photo"><img src="assets/photos/about-aerial-800.jpg" srcset="assets/photos/about-aerial-800.jpg 800w, assets/photos/about-aerial-1600.jpg 1600w" sizes="(max-width: 1023px) 100vw, 50vw" alt="Aerial view of Shrishti Gardens — brown-roofed guest wings around a landscaped courtyard on the Kodaikanal hillside" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROOMS ============ -->
+<section class="section rooms" id="rooms" aria-labelledby="roomsTitle">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="kicker">Suites</p>
+      <h2 class="display" id="roomsTitle">Four ways to stay</h2>
+      <p class="section-head__lede">Every category shares the same base tariff, with breakfast included. Choose the view and the feeling you'd like to wake up to.</p>
+    </header>
+  </div>
+
+  <div class="rooms__grid">
+      <article class="room-card reveal">
+        <div class="room-card__media"><img src="assets/photos/room-balcony-800.jpg" srcset="assets/photos/room-balcony-800.jpg 800w, assets/photos/room-balcony-1600.jpg 1600w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw" alt="Suite with Balcony — king bed with upholstered headboard, back-lit mirror and a window looking over the green hills" loading="lazy" decoding="async"></div>
+        <div class="room-card__body">
+          <h3>Suite with Balcony</h3>
+          <p>A private balcony to step out into the mountain air, with a calm, well-appointed suite behind it.</p>
+          <div class="room-card__foot">
+            <button class="link-btn" data-enquire="Suite with Balcony">Enquire <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="room-card reveal">
+        <div class="room-card__media"><img src="assets/room-hero.jpg" alt="Guest room interior — sample image for Standard Suite" loading="lazy" style="object-position:30% 70%"><span class="ph__tag ph__tag--sm">Sample image</span></div>
+        <div class="room-card__body">
+          <h3>Standard Suite</h3>
+          <p>Our essential suite — warm, restful and thoughtfully furnished for an easy, comfortable stay.</p>
+          <div class="room-card__foot">
+            <button class="link-btn" data-enquire="Standard Suite">Enquire <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="room-card reveal">
+        <div class="room-card__media"><img src="assets/photos/room-garden-800.jpg" srcset="assets/photos/room-garden-800.jpg 800w, assets/photos/room-garden-1600.jpg 1600w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw" alt="Garden Suite with beamed ceiling, lantern pendants, upholstered headboard and open wardrobe" loading="lazy" decoding="async"></div>
+        <div class="room-card__body">
+          <h3>Garden Suite</h3>
+          <p>Close to the greenery, for guests who like to begin the morning with the garden just outside.</p>
+          <div class="room-card__foot">
+            <button class="link-btn" data-enquire="Garden Suite">Enquire <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="room-card reveal">
+        <div class="room-card__media"><img src="assets/photos/room-sky-view-800.jpg" srcset="assets/photos/room-sky-view-800.jpg 800w, assets/photos/room-sky-view-1600.jpg 1600w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 25vw" alt="Sky-View Suite — glass-roofed private corridor opening to the sky, with a sitting area beyond full-height glass" loading="lazy" decoding="async"></div>
+        <div class="room-card__body">
+          <h3>Sky-View Suite</h3>
+          <p>Open to the sky and the changing hill-station light, for an especially airy, unhurried stay.</p>
+          <div class="room-card__foot">
+            <button class="link-btn" data-enquire="Sky-View Suite">Enquire <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </article>
+  </div>
+
+  <div class="container">
+    <div class="tariff-note reveal">
+      <p><strong>Base tariff ₹5,500 per room per night</strong> for one or two guests · Complimentary breakfast included · 5% GST applicable · Additional guests charged by age.</p>
+      <p class="muted">Rates are subject to availability and confirmation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMENITIES ============ -->
+<section class="section amenities" id="amenities" aria-labelledby="amenTitle">
+  <div class="container">
+    <header class="section-head section-head--light reveal">
+      <p class="kicker">Inclusions</p>
+      <h2 class="display" id="amenTitle">Small comforts, done well</h2>
+    </header>
+    <ul class="amen-grid">
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 14h17v4a7 7 0 01-7 7h-3a7 7 0 01-7-7z M23 15h2a3 3 0 010 6h-2.5 M10 6c0 2 2 2 2 4 M15 6c0 2 2 2 2 4"/></svg>
+        <h3>Complimentary Breakfast</h3><p>A Continental and Indian morning spread.</p>
+      </li>
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 12h14l-1.5 13h-11z M12 12V8h8v4 M23 15h3v5h-3"/></svg>
+        <h3>Curated Brew Bar</h3><p>Electric kettle, tea varieties, select coffees and sweeteners.</p>
+      </li>
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 7h14l-6 10v7 M13 26h8 M17 17L9 7 M11 10h10"/></svg>
+        <h3>Arrival Hospitality</h3><p>A signature welcome drink at check-in.</p>
+      </li>
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 10h8v15a2 2 0 01-2 2h-4a2 2 0 01-2-2z M14 10V6h4v4 M16 4v2 M24 9c2 2 2 5 0 7-2-2-2-5 0-7z"/></svg>
+        <h3>Boutique Bath Care</h3><p>Premium botanical toiletries and fresh terry linens.</p>
+      </li>
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M13 5h6v4l3 4v13a1 1 0 01-1 1H11a1 1 0 01-1-1V13l3-4z M10 17h12 M16 20c-1.5 2-1.5 3.5 0 4.5 1.5-1 1.5-2.5 0-4.5z"/></svg>
+        <h3>Sustainable Living</h3><p>Sanitised glass carafes of purified RO drinking water, with round-the-clock refills.</p>
+      </li>
+      <li class="amen reveal">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="3"/><path d="M13 22V11h4.5a3.5 3.5 0 010 7H13"/></svg>
+        <h3>Parking</h3><p>Closed on-site parking, available on a first-come basis.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience" aria-labelledby="expTitle">
+  <div class="experience__media parallax" data-speed="0.12">
+    <!-- Silent ambient film. Source chosen and loaded by main.js only when the section is near the viewport. -->
+    <video class="exp-video" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1"
+           poster="assets/video/experience-poster.jpg"
+           data-src-desktop="assets/video/experience-1280.mp4" data-src-mobile="assets/video/experience-640.mp4"></video>
+  </div>
+  <div class="container experience__copy">
+    <div class="exp-left reveal">
+      <p class="kicker">The Experience</p>
+      <h2 class="exp-title" id="expTitle">Mornings in the mist.<br>Evenings without a schedule.</h2>
+    </div>
+    <div class="exp-right reveal">
+      <p>Kodaikanal moves at a gentler pace. Wake to cool air, linger over breakfast, wander the hill station at your own speed — and come back to a quiet room that feels like it was waiting for you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="gallery" aria-labelledby="galTitle">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="kicker">Gallery</p>
+      <h2 class="display" id="galTitle">A glimpse of the retreat</h2>
+      <p class="section-head__lede">Suites, gardens and the small details of a stay. Select any photograph to view it larger.</p>
+    </header>
+    <div class="gal-grid" id="galGrid">
+      <button class="gal-item gal-item--wide" data-caption="Garden wing and courtyard lawn" data-full="assets/photos/g-garden-wing-1600.jpg"><img src="assets/photos/g-garden-wing-800.jpg" srcset="assets/photos/g-garden-wing-800.jpg 800w, assets/photos/g-garden-wing-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Garden wing with balconies above a lawn and stone path" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="A suite in soft green and ivory" data-full="assets/photos/g-room-green-1600.jpg"><img src="assets/photos/g-room-green-800.jpg" srcset="assets/photos/g-room-green-800.jpg 800w, assets/photos/g-room-green-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Guest room with green bed runner, back-lit mirror and sheer-curtained window" loading="lazy" decoding="async"></button>
+      <button class="gal-item gal-item--tall" data-caption="The garden gazebo" data-full="assets/photos/g-gazebo-1600.jpg"><img src="assets/photos/g-gazebo-800.jpg" srcset="assets/photos/g-gazebo-800.jpg 800w, assets/photos/g-gazebo-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Thatched gazebo with teal lounge chairs in the garden" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Courtyard and signature wall" data-full="assets/photos/g-courtyard-sign-1600.jpg"><img src="assets/photos/g-courtyard-sign-800.jpg" srcset="assets/photos/g-courtyard-sign-800.jpg 800w, assets/photos/g-courtyard-sign-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="SHRISHTI lettering on a stone wall below the planted courtyard" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Timber beams and lantern light" data-full="assets/photos/g-room-oval-mirror-1600.jpg"><img src="assets/photos/g-room-oval-mirror-800.jpg" srcset="assets/photos/g-room-oval-mirror-800.jpg 800w, assets/photos/g-room-oval-mirror-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Guest room with oval mirror, pendant lamps and timber beams" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Spices for the morning kitchen" data-full="assets/photos/g-spices-1600.jpg"><img src="assets/photos/g-spices-800.jpg" srcset="assets/photos/g-spices-800.jpg 800w, assets/photos/g-spices-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Tray of whole and ground spices on a wooden table" loading="lazy" decoding="async"></button>
+      <button class="gal-item gal-item--wide" data-caption="Arrival pavilion" data-full="assets/photos/g-cafe-entrance-1600.jpg"><img src="assets/photos/g-cafe-entrance-800.jpg" srcset="assets/photos/g-cafe-entrance-800.jpg 800w, assets/photos/g-cafe-entrance-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Glass-fronted entrance pavilion with palms and the Shrishti sign" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Skylit suite lounge" data-full="assets/photos/g-skylight-lounge-1600.jpg"><img src="assets/photos/g-skylight-lounge-800.jpg" srcset="assets/photos/g-skylight-lounge-800.jpg 800w, assets/photos/g-skylight-lounge-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Suite sitting room with glass skylight, dining table and kettle" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="The in-room brew bar, freshly prepared" data-full="assets/photos/g-housekeeping-1600.jpg"><img src="assets/photos/g-housekeeping-800.jpg" srcset="assets/photos/g-housekeeping-800.jpg 800w, assets/photos/g-housekeeping-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Housekeeping attendant arranging the in-room tea and coffee tray" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Twin-view suite under timber beams" data-full="assets/photos/g-room-twin-mirror-1600.jpg"><img src="assets/photos/g-room-twin-mirror-800.jpg" srcset="assets/photos/g-room-twin-mirror-800.jpg 800w, assets/photos/g-room-twin-mirror-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Guest room with mirrored headboard wall, beamed ceiling and lantern lights" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="The entrance" data-full="assets/photos/g-entrance-1600.jpg"><img src="assets/photos/g-entrance-800.jpg" srcset="assets/photos/g-entrance-800.jpg 800w, assets/photos/g-entrance-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Shrishti entrance wall with tiered gardens and stone steps" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Ready for arrival" data-full="assets/photos/g-room-mirror-1600.jpg"><img src="assets/photos/g-room-mirror-800.jpg" srcset="assets/photos/g-room-mirror-800.jpg 800w, assets/photos/g-room-mirror-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="King bed with mirror-backed headboard and oval wall mirror" loading="lazy" decoding="async"></button>
+      <button class="gal-item" data-caption="Shrishti Gardens" data-full="assets/photos/g-signboard-1600.jpg"><img src="assets/photos/g-signboard-800.jpg" srcset="assets/photos/g-signboard-800.jpg 800w, assets/photos/g-signboard-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, 25vw" alt="Round Shrishti Gardens sign in English and Tamil" loading="lazy" decoding="async"></button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-close" aria-label="Close viewer">×</button>
+  <button class="lb-nav lb-prev" aria-label="Previous image">‹</button>
+  <figure><div class="lb-stage" id="lbStage"></div><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav lb-next" aria-label="Next image">›</button>
+</div>
+
+<!-- ============ REVIEWS ============ -->
+<!-- Cards marked .is-sample are placeholders. Replace with verified, approved reviews (via the admin panel in a later phase). -->
+<section class="section reviews" id="reviews" aria-labelledby="revTitle">
+  <div class="container">
+    <header class="rev-head">
+      <div class="rev-head__text reveal">
+        <p class="kicker">Guest Reflections</p>
+        <h2 class="rev-title" id="revTitle">Words from our guests</h2>
+        <p class="rev-lede">Memories and quiet moments, recounted by travellers who found their place in the quiet among the Palani Hills.</p>
+      </div>
+      <div class="rev-badge reveal" aria-label="Guest rating not yet connected">
+        <span class="rev-badge__score" aria-hidden="true">—</span>
+        <div>
+          <div class="rev-stars rev-stars--empty" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9-4.4-4.1 6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9-4.4-4.1 6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9-4.4-4.1 6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9-4.4-4.1 6-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9-4.4-4.1 6-.7z"/></svg></div>
+          <p class="rev-badge__title">Guest rating</p>
+          <p class="rev-badge__sub">Google &amp; direct reviews · to be connected</p>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <!-- Full-width, auto-scrolling testimonials. Pauses on hover/focus; static when everything fits. -->
+  <div class="rev-marquee" id="revMarquee" role="region" aria-roledescription="carousel" aria-label="Guest reviews">
+    <div class="rev-track" id="revTrack"></div>
+  </div>
+
+  <div class="container">
+    <div class="rev-foot reveal">
+      <p class="rev-foot__note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Only verified guest reviews will be published here, with each guest&rsquo;s approval.</p>
+      <a href="#booking" class="rev-foot__cta" data-open-enquiry>Experience it yourself <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="section location" id="location" aria-labelledby="locTitle">
+  <div class="container loc-grid">
+    <div class="reveal">
+      <p class="kicker">Location</p>
+      <h2 class="display" id="locTitle">Kodaikanal,<br><em>Tamil Nadu, India</em></h2>
+      <p>Known as the Princess of Hill Stations, Kodaikanal sits high in the Palani Hills of the Western Ghats. Shrishti Gardens is here, at 2,133 metres — close enough to explore, far enough to feel away.</p>
+      <address class="loc-address"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span><strong>Shrishti Gardens</strong><br>Wood Cot Compound, 23/105-1,<br>near Srinivasapuram bus stop, Shenbaganur,<br>Kodaikanal, Tamil Nadu 624101, India</span></address>
+      <a class="btn-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Shrishti%20Gardens%2C%20Wood%20Cot%20Compound%2C%2023/105-1%2C%20near%20Srinivasapuram%20bus%20stop%2C%20Shenbaganur%2C%20Kodaikanal%2C%20Tamil%20Nadu%20624101&amp;travelmode=driving" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="map-frame reveal">
+      <iframe title="Map showing Shrishti Gardens, Shenbaganur, Kodaikanal" src="https://maps.google.com/maps?q=Shrishti+Gardens%2C+Wood+Cot+Compound%2C+23%2F105-1%2C+near+Srinivasapuram+bus+stop%2C+Shenbaganur%2C+Kodaikanal%2C+Tamil+Nadu+624101&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ENQUIRY ============ -->
+<section class="section booking" id="booking" aria-labelledby="bookTitle">
+  <div class="container book-grid">
+    <div class="book-intro reveal">
+      <p class="kicker">Reservations</p>
+      <h2 class="display" id="bookTitle">Plan your stay</h2>
+      <p>Share your dates and who's travelling. Our team will check availability and reply with a confirmed quotation.</p>
+      <ul class="book-facts">
+        <li>₹5,500 per room per night for 1–2 guests, breakfast included</li>
+        <li>Additional guests: 0–5 yrs free · 6–12 yrs ₹900 · 13+ yrs ₹1,800 per night</li>
+        <li>5% GST applicable</li>
+      </ul>
+      <p class="muted small">This form sends an enquiry, not a confirmed reservation. No payment is taken and no room is held until our team confirms.</p>
+    </div>
+
+    <div class="book-cta reveal">
+      <p class="book-cta__eyebrow">Stay enquiry</p>
+      <p class="book-cta__lede">Choose your dates, guests and preferred suite. You'll see an estimate before you send.</p>
+      <button type="button" class="btn-solid book-cta__btn" data-open-enquiry>Start your enquiry <span aria-hidden="true">→</span></button>
+      <p class="book-cta__alt">Prefer to talk? <a href="https://wa.me/919488212345" target="_blank" rel="noopener">WhatsApp us</a> or call <a href="tel:+919488212345">+91 94882 12345</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact" aria-labelledby="contactTitle">
+  <div class="container">
+    <header class="section-head section-head--light reveal">
+      <p class="kicker">Contact</p>
+      <h2 class="display" id="contactTitle">We'd love to hear from you</h2>
+    </header>
+    <div class="contact-grid">
+      <div class="contact-item reveal"><h3>Phone</h3><p><a href="tel:+919488212345">+91 94882 12345</a></p></div>
+      <div class="contact-item reveal"><h3>WhatsApp</h3><p><a href="https://wa.me/919488212345" target="_blank" rel="noopener">+91 94882 12345</a></p></div>
+      <div class="contact-item reveal"><h3>Email</h3><p><a href="mailto:stay@shrishtigardens.com">stay@shrishtigardens.com</a></p></div>
+      <div class="contact-item reveal"><h3>Front Desk</h3><p>07:00 AM – 10:30 PM IST<br><span class="sub">7 days a week</span></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo-light.png" alt="Shrishti Gardens — your green escape" class="foot-logo" width="720" height="347" loading="lazy">
+      <p>An exclusive boutique nature retreat nestled at 2,133 metres altitude in Kodaikanal. Thirteen thoughtfully appointed rooms among pine valleys and misty mountain horizons.</p>
+      <p class="foot-loc">Kodaikanal · Tamil Nadu · India</p>
+    </div>
+    <nav aria-label="Explore">
+      <h4>Explore</h4>
+      <ul class="foot-links">
+        <li><a href="#home">Home Experience</a></li>
+        <li><a href="#about">About Shrishti</a></li>
+        <li><a href="#rooms">Suites &amp; Rooms</a></li>
+        <li><a href="#reviews">Guest Reviews</a></li>
+        <li><a href="#gallery">Visual Gallery</a></li>
+        <li><a href="#experience">The Kodai Experience</a></li>
+        <li><a href="#location">Location &amp; Directions</a></li>
+        <li><a href="#booking">Reservations</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Concierge</h4>
+      <ul class="foot-contact">
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Shrishti%20Gardens%2C%20Wood%20Cot%20Compound%2C%2023/105-1%2C%20near%20Srinivasapuram%20bus%20stop%2C%20Shenbaganur%2C%20Kodaikanal%2C%20Tamil%20Nadu%20624101" target="_blank" rel="noopener">Wood Cot Compound, 23/105-1, near Srinivasapuram bus stop, Shenbaganur, Kodaikanal, Tamil Nadu 624101, India</a></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+919488212345">+91 94882 12345</a></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3 2.5 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1.2-.5-2.3-1.6-2.8-2.8l.8-1-1-2z"/></svg><a href="https://wa.me/919488212345" target="_blank" rel="noopener">WhatsApp: +91 94882 12345</a></li>
+        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:stay@shrishtigardens.com">stay@shrishtigardens.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Social Journey</h4>
+      <p>Follow our seasonal stories, hill-station mist updates and guest experiences.</p>
+      <ul class="social">
+        <li><button type="button" class="social__btn" aria-label="Instagram (link coming soon)" data-toast="Instagram link will be added once the official handle is confirmed."><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></button></li>
+        <li><button type="button" class="social__btn" aria-label="Facebook (link coming soon)" data-toast="Facebook link will be added once the official page is confirmed."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></button></li>
+        <li><button type="button" class="social__btn" aria-label="YouTube (link coming soon)" data-toast="YouTube link will be added once the official channel is confirmed."><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></button></li>
+        <li><a class="social__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Shrishti%20Gardens%2C%20Wood%20Cot%20Compound%2C%2023/105-1%2C%20near%20Srinivasapuram%20bus%20stop%2C%20Shenbaganur%2C%20Kodaikanal%2C%20Tamil%20Nadu%20624101" target="_blank" rel="noopener" aria-label="Open location in Google Maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6.5v13.5L9 17.5l6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg></a></li>
+      </ul>
+      <div class="concierge-card">
+        <p class="concierge-card__title">Front Desk &amp; Concierge</p>
+        <p>07:00 AM – 10:30 PM IST · 7 days a week</p>
+      </div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <p>© <span id="year">2026</span> Shrishti Gardens. Palani Hills · Western Ghats. All rights reserved.</p>
+    <nav aria-label="Legal">
+      <button type="button" data-toast="Privacy Policy will be published once approved.">Privacy Policy</button>
+      <span class="dot" aria-hidden="true">·</span>
+      <button type="button" data-toast="Terms &amp; Conditions will be published once approved.">Terms &amp; Conditions</button>
+      <span class="dot" aria-hidden="true">·</span>
+      <button type="button" data-toast="The Host Portal (/admin/login) arrives with the admin panel in a later phase."><svg class="ic ic--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Host Portal</button>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="#home">↑ Top</a>
+    </nav>
+  </div>
+  <div class="foot-mark" aria-hidden="true"><img src="assets/logo-light.png" alt="" width="720" height="347" loading="lazy"></div>
+</footer>
+
+
+<!-- ============ ENQUIRY POP-UP (light) ============ -->
+<div class="enq" id="enq" hidden>
+  <div class="enq__backdrop" data-close-enquiry></div>
+  <div class="enq__panel" role="dialog" aria-modal="true" aria-labelledby="folioTitle" tabindex="-1">
+    <button type="button" class="enq__close" data-close-enquiry aria-label="Close enquiry"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+
+    <div class="enq__view enq__view--form" id="enqForm">
+      <aside class="folio" aria-label="Your stay summary">
+        <p class="folio__eyebrow">Stay folio</p>
+        <h2 class="folio__title" id="folioTitle">Your stay at Shrishti Gardens</h2>
+        <p class="folio__dates" id="folioDates">Add your dates to see an estimate</p>
+        <figure class="folio__media" id="folioMedia"></figure>
+        <dl class="folio__lines">
+          <div><dt>Duration of stay</dt><dd id="fNights">—</dd></div>
+          <div><dt>Rooms</dt><dd id="fRooms">1 Room</dd></div>
+          <div><dt>Nightly rate</dt><dd class="mono">₹5,500 / room</dd></div>
+          <div id="fExtraRow" hidden><dt>Additional guests</dt><dd class="mono" id="fExtra"></dd></div>
+          <div><dt>GST (5% on room tariff)</dt><dd class="mono" id="fGst">—</dd></div>
+        </dl>
+        <div class="folio__total"><span>Estimated total</span><strong id="fTotal">—</strong></div>
+        <p class="folio__fine">Includes complimentary breakfast. Estimate only — our team confirms the final quotation.</p>
+        <div class="folio__assure">
+          <p class="folio__assure-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 8V6M10 6h4"/></svg>Concierge assurance</p>
+          <p>Our host reviews every stay personally. No room is held until our team confirms availability and, if you pay now, verifies your payment.</p>
+        </div>
+      </aside>
+
+      <div class="enq__formcol">
+        <p class="enq__eyebrow">Plan your stay</p>
+        <h3 class="enq__title">Send us your enquiry</h3>
+    <form class="book-form" id="bookForm" novalidate aria-label="Stay enquiry">
+      <div class="bf-row" id="bDates">
+        <div class="bf-field sg-trigger"><span class="bf-label" id="bInLbl">Check-in *</span>
+          <button type="button" class="sg-field-btn" id="bInBtn" aria-labelledby="bInLbl bInBtn" aria-haspopup="dialog" aria-expanded="false"><span class="sg-val">Add date</span><svg class="sg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></button>
+          <input type="hidden" id="bIn" required></div>
+        <div class="bf-field sg-trigger"><span class="bf-label" id="bOutLbl">Check-out *</span>
+          <button type="button" class="sg-field-btn" id="bOutBtn" aria-labelledby="bOutLbl bOutBtn" aria-haspopup="dialog" aria-expanded="false"><span class="sg-val">Add date</span><svg class="sg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></button>
+          <input type="hidden" id="bOut" required></div>
+      </div>
+      <div class="bf-row bf-row--3">
+        <div class="bf-field"><label for="bAdults">Adults *</label>
+          <select id="bAdults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
+        <div class="bf-field"><label for="bKids">Children</label>
+          <select id="bKids"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+        <div class="bf-field"><label for="bRooms">Rooms *</label>
+          <select id="bRooms"><option selected>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+      </div>
+      <div class="bf-row" id="kidAges"></div>
+      <div class="bf-field"><label for="bCat">Preferred room category</label>
+        <select id="bCat"><option value="">No preference</option><option>Suite with Balcony</option><option>Standard Suite</option><option>Garden Suite</option><option>Sky-View Suite</option></select></div>
+      <div class="bf-row">
+        <div class="bf-field"><label for="bName">Full name *</label><input id="bName" autocomplete="name" required></div>
+        <div class="bf-field"><label for="bPhone">Phone *</label><input id="bPhone" type="tel" autocomplete="tel" required placeholder="+91"></div>
+      </div>
+      <div class="bf-field"><label for="bEmail">Email *</label><input id="bEmail" type="email" autocomplete="email" required></div>
+      <div class="bf-field"><label for="bMsg">Message</label><textarea id="bMsg" rows="3" placeholder="Anything we should know?"></textarea></div>
+      <p class="bf-alert" id="bfAlert" role="alert" hidden></p>
+      <div class="bf-actions">
+        <button type="button" class="btn-solid bf-pay" id="bPay"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM18 18h3v3h-3zM14 20v1M20 14h1"/></svg>Make payment<span class="bf-pay__amt" id="bPayAmt"></span></button>
+        <button type="submit" class="btn-secondary">Send enquiry</button>
+      </div>
+      <p class="bf-actions__note">Pay now by UPI to request your stay, or send an enquiry and pay after we confirm availability.</p>
+    </form>
+      </div>
+    </div>
+
+    <div class="enq__view enq__view--pay" id="enqPay" hidden tabindex="-1">
+      <button type="button" class="pay__back" id="payBack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Edit stay details</button>
+      <div class="pay__grid">
+        <div class="pay__qrcol">
+          <div class="pay__qrcard">
+            <div class="pay__qr" id="payQr" aria-label="UPI payment QR code"></div>
+            <p class="pay__scan">Scan with any UPI app</p>
+            <p class="pay__apps">Google Pay · PhonePe · Paytm · BHIM · bank apps</p>
+          </div>
+        </div>
+        <div class="pay__info">
+          <p class="enq__eyebrow">UPI payment</p>
+          <h2 class="pay__title">Scan to pay</h2>
+          <p class="pay__amount" id="payAmount">₹0</p>
+          <p class="pay__for" id="payFor"></p>
+          <dl class="pay__rows">
+            <div><dt>Pay to</dt><dd>Shrishti Gardens</dd></div>
+            <div><dt>UPI ID</dt><dd><span id="payUpi">9150974111@hdfc</span><button type="button" class="pay__copy" data-copy="#payUpi">Copy</button></dd></div>
+            <div id="payRefRow" class="pay__refrow" hidden><dt>Your reference</dt><dd><span id="payRef"></span><button type="button" class="pay__copy" data-copy="#payRef">Copy</button></dd></div>
+          </dl>
+          <p class="pay__hint">The exact amount is filled in when you scan. Please don't change it.</p>
+          <a class="btn-solid pay__open" id="payOpen" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Open UPI app to pay</a>
+          <p class="pay__then">After paying, enter the UTR from your UPI app below.</p>
+          <form class="pay__confirm" id="payForm" novalidate>
+            <div class="bf-field" id="utrField">
+              <label for="payUtr">UPI transaction ID (UTR) *</label>
+              <input id="payUtr" inputmode="numeric" autocomplete="off" maxlength="22" placeholder="12-digit number from your UPI app" required aria-describedby="utrOk">
+              <span class="utr-ok" id="utrOk" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>UTR looks valid — your reference is shown above</span>
+            </div>
+            <p class="bf-alert" id="payAlert" role="alert" hidden></p>
+            <button type="submit" class="btn-solid">I've completed the payment</button>
+          </form>
+          <p class="pay__fine">Our team verifies every payment against your UTR before confirming your stay.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="enq__view enq__view--done" id="enqDone" hidden tabindex="-1" aria-live="polite">
+      <img src="assets/logo.png" alt="Shrishti Gardens" class="done__logo" width="720" height="347">
+      <div class="done__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <p class="done__eyebrow" id="dEyebrow">Enquiry received</p>
+      <h2 class="done__title">Thank you, <span id="dName"></span></h2>
+      <p class="done__lede" id="dLede">Your stay enquiry has reached our team. Our retreat manager will check availability, review room allocation and contact you shortly with a confirmed quotation.</p>
+      <dl class="done__card">
+        <div class="done__ref"><dt>Enquiry reference</dt><dd id="dRef"></dd></div>
+        <div><dt>Stay dates</dt><dd id="dDates"></dd></div>
+        <div><dt>Guests</dt><dd id="dGuests"></dd></div>
+        <div><dt>Accommodation</dt><dd id="dRoom"></dd></div>
+        <div><dt id="dTotalLbl">Estimated total</dt><dd class="mono" id="dTotal"></dd></div>
+        <div id="dPayRow" hidden><dt>Payment</dt><dd><span id="dPay"></span><span class="done__status">Pending verification</span></dd></div>
+      </dl>
+      <p class="done__note" id="dNote">Your stay is not confirmed until you hear from us. No payment has been taken.</p>
+      <div class="done__actions">
+        <a class="btn-dark" id="dWhatsApp" href="https://wa.me/919488212345" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3 2.5 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1.2-.5-2.3-1.6-2.8-2.8l.8-1-1-2z"/></svg>Confirm faster via WhatsApp</a>
+        <button type="button" class="done__back" data-close-enquiry>Back to the retreat</button>
+      </div>
+      <p class="done__demo">Prototype preview — this enquiry was not sent anywhere.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============ CHECK STATUS POP-UP ============ -->
+<div class="enq st" id="statusDlg" hidden>
+  <div class="enq__backdrop" data-close-status></div>
+  <div class="enq__panel st__panel" role="dialog" aria-modal="true" aria-labelledby="stTitle" tabindex="-1">
+    <button type="button" class="enq__close" data-close-status aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="st__body">
+      <p class="enq__eyebrow">Your stay</p>
+      <h2 class="st__title" id="stTitle">Check booking status</h2>
+      <form class="st__form" id="stForm" novalidate>
+        <fieldset class="st__choice">
+          <legend>Look up by</legend>
+          <label class="st__radio"><input type="radio" name="stBy" value="phone" checked><span>Phone number</span></label>
+          <label class="st__radio"><input type="radio" name="stBy" value="ref"><span>Reference ID</span></label>
+        </fieldset>
+        <div class="bf-field" id="stField">
+          <label for="stInput" id="stLabel">Phone number</label>
+          <input id="stInput" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 98765 43210">
+        </div>
+        <p class="bf-alert" id="stAlert" role="alert" hidden></p>
+        <button type="submit" class="btn-solid">Check status</button>
+      </form>
+      <div class="st__results" id="stResults" aria-live="polite"></div>
+      <p class="st__fine">Prototype: bookings are looked up from this browser only. The live site will check our reservations system.</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<!-- Guest reviews data. SAMPLE placeholders only — replace with verified, guest-approved reviews.
+     rating: 1–5 (only 4 and 5 are displayed). sample: true shows the "Sample" tag. -->
+<script type="application/json" id="reviewsData">
+[
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Suite with Balcony", "rating": 5, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Garden Suite", "rating": 5, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Sky-View Suite", "rating": 4, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Standard Suite", "rating": 5, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Suite with Balcony", "rating": 3, "sample": true,
+    "quote": "This 3-star sample is filtered out and never shown." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Garden Suite", "rating": 5, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." },
+  { "name": "Guest name", "city": "City", "stayed": "Month 2026", "room": "Sky-View Suite", "rating": 4, "sample": true,
+    "quote": "A verified guest review will appear here once it has been approved by management, in the guest's own words." }
+]
+</script>
+<script src="qr.js" defer></script>
+<script src="picker.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
